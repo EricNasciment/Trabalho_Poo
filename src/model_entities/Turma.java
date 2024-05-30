@@ -3,6 +3,8 @@ package model_entities;
 import java.util.ArrayList;
 import java.util.List;
 
+import model.service.Aluno_Bolsita;
+import model.service.Aluno_Regular;
 import model_entities2.Aluno;
 import model_entities2.Professor;
 
@@ -12,7 +14,7 @@ public class Turma {
 	private Disciplina disciplina;
 	private Professor professor;
 	
-	List<Aluno> aluno = new  ArrayList<>();
+	List<Aluno> alunos = new  ArrayList<>();
 
 	
 
@@ -21,6 +23,7 @@ public class Turma {
 		this.codigo = codigo;
 		this.disciplina = disciplina;
 		this.professor = professor;
+	
 		
 	}
 
@@ -44,22 +47,32 @@ public class Turma {
 		return professor;
 	}
 
-			
-	public void alunoAdd(String string, int cpf, int idade, int matricula) {
-		aluno.add((Aluno) aluno);
+	public void alunoAdd(Aluno_Regular alunoregular) {
+	    alunos.add(alunoregular);
+	}
+
+	public void alunoAdd(Aluno_Bolsita alunobolsista) {
+	    alunos.add(alunobolsista);
 	}
 	
 	public void alunoRemove() {
-		aluno.remove((Aluno) aluno);
+		alunos.remove( alunos);
 	}
 	
-	public String listarAluno(String name) {
-		for(Aluno alun: aluno) {
-			return alun.getName();
+	public void listarAluno() {
+		
+		for(Aluno alun: alunos) {
+		System.out.println("Name: " + alun.getName() +
+				            ", Cpf: " + alun.getCpf()  +
+				          ", Idade: " + alun.getIdade()+
+				          ", Matricula: " + alun.getMatricula());
+		
+				
+				
+				
+			
 		}
-		return name;
 	}
-
 	@Override
 	public String toString() {
 		return 
@@ -91,6 +104,8 @@ public class Turma {
 	             
 	             
 	}
+
+	
 	 
 	
 	

@@ -10,25 +10,39 @@ public class Aluno extends Pessoa {
 		// TODO Auto-generated constructor stub
 	}
 
-    public void getMatricula(int matricula) {
+  
+	
+	
+	
+	
+	
+	public int getMatricula() {
+		return matricula;
+	}
+
+
+
+
+
+
+
+	public void setMatricula(int matricula) {
 		this.matricula = matricula;
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	public double pagarMensalidade( ) {
 		return (Double) null;
 		
 		
 	}
 
-	@Override
-	public String toString() {
-		return "Aluno [matricula=" + matricula + "]";
-	}
-	
+
 	
 	
 
