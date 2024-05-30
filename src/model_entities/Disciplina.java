@@ -6,7 +6,7 @@ public class Disciplina {
 	private int codigo;	
 	private int semestre;
 	
-	
+
 	
 	public Disciplina(String name, int codigo, int semestre) {
 		
@@ -52,6 +52,14 @@ public class Disciplina {
 	}
 	
 	
-	
+@Override
+public String toString() {
+		return "Disciplina: " + 
+	             name + 
+	             ", Codigo: " +
+	             codigo +
+	             ", Semestre" +
+	             semestre ;
+	}
 
 }

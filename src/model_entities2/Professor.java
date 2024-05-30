@@ -2,19 +2,19 @@ package model_entities2;
 
 public class Professor extends Pessoa {
 	
-	private  int centro;
+	private  String centro;
 
-	public Professor(String name, int cpf, int idade,int centro) {
+	public Professor(String name, int cpf, int idade,String centro) {
 		super(name, cpf, idade);
 		this.centro = centro;
 		// TODO Auto-generated constructor stub
 	}
 
-	public int getCentro() {
+	public String getCentro() {
 		return centro;
 	}
 
-	public void setCentro(int centro) {
+	public void setCentro(String centro) {
 		this.centro = centro;
 	}
 

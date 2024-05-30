@@ -15,4 +15,13 @@ public class Aluno_Bolsita extends Aluno{
 		
 	}
 
+
+	@Override
+	public String toString() {
+		return "Aluno_Bolsita ";
+	}
+
+	
+	
+	
 }

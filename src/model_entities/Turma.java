@@ -14,12 +14,14 @@ public class Turma {
 	
 	List<Aluno> aluno = new  ArrayList<>();
 
-	public Turma(int codigo, Disciplina disciplina, Professor professor, List<Aluno> aluno) {
+	
 
+	public Turma(int codigo, Disciplina disciplina, Professor professor) {
+		super();
 		this.codigo = codigo;
 		this.disciplina = disciplina;
 		this.professor = professor;
-		this.aluno = aluno;
+		
 	}
 
 	public int getCodigo() {
@@ -43,7 +45,7 @@ public class Turma {
 	}
 
 			
-	public void alunoAdd() {
+	public void alunoAdd(String string, int cpf, int idade, int matricula) {
 		aluno.add((Aluno) aluno);
 	}
 	
@@ -57,5 +59,40 @@ public class Turma {
 		}
 		return name;
 	}
+
+	@Override
+	public String toString() {
+		return 
+				"informações da turma: " + "\n"  +
+				"codigo da turma: "      +  
+		         codigo                  +  "\n" +
+		         "---------" + "\n" +
+		         
+		         "Disciplina: " + 
+	             disciplina.getName()    +  "\n" +
+		         
+	             "Codigo: "              +
+	            disciplina.getCodigo()   +  "\n" +
+	             "Semestre: "            +
+	            disciplina.getSemestre() +  "\n" +
+	            "---------" + "\n"  +
+	            "Professor: "            +
+	            professor.getName()      +  "\n" +
+	            "Cpf: "                  +
+	            professor.getCpf()       +  "\n" +
+	            "Idade: "                +
+	            professor.getIdade()     +  "\n" +
+	            "Materia: "              + 
+	            professor.getCentro()    +  "\n" +
+	            "---------" + "\n" ;
+		
+		
+	            
+	             
+	             
+	}
+	 
+	
+	
 	
 }

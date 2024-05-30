@@ -4,7 +4,6 @@ public class Aluno extends Pessoa {
 
 	private int matricula;
 	
-	
 	public Aluno(String name, int cpf, int idade,int matricula) {
 		super(name, cpf, idade);
 		this.matricula = matricula;
@@ -24,6 +23,13 @@ public class Aluno extends Pessoa {
 		
 		
 	}
+
+	@Override
+	public String toString() {
+		return "Aluno [matricula=" + matricula + "]";
+	}
+	
+	
 	
 
 }

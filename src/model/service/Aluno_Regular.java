@@ -16,4 +16,17 @@ public class Aluno_Regular extends Aluno {
 	public double pagarMensalidade(double amount) {
 		return 200.00;
 	}
+
+
+
+
+
+	@Override
+	public String toString() {
+		return " Aluno_Regular";
+	}
+	
+	
+	
+	
 }
